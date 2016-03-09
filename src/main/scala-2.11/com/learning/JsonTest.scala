@@ -10,12 +10,18 @@ object JsonTest extends App {
   import org.json4s.JsonDSL._
 
   val a = parse(""" { "name": "david", "numbers" : [1, 2, 3, 4] } """)
+  val b = parse("""  { "numbers" : [1, 2, 3, 4] } """)
+  val c = parse(""" {"name":"Toy","price":35.35} """, useBigDecimalForDouble = true)
+
 
   println(a.getClass().getName())
 
+  println(a)
+  println(b)
 
 
-
+  // DSL Rules
+  // Primaitive types map to JSON primitives
   val json = List(1,2,3)
   val line = compact(render(json))
   println(line)
@@ -24,6 +30,8 @@ object JsonTest extends App {
 
   val line2 = pretty(render(json2))
   println(line2)
+
+
 
 
 }
