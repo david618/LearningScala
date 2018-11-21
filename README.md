@@ -97,3 +97,5 @@ object LoggingApp extends App with Logging {
 }
 
 ```
+
+Another option would be to use [lightbend](https://github.com/lightbend/scala-logging) logging.
