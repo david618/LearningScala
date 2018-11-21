@@ -5,6 +5,9 @@ This is just a simple project to capture my progress in Learning Scala
 
 ## Scala Logging using log4j
 
+The [Apache Commons Logging](https://mvnrepository.com/artifact/commons-logging/commons-logging) hasn't been updated since 2014.  It might be ok; but we might want to consider using log4j instead.
+
+
 Some sample on [github](https://github.com/apache/logging-log4j-scala). 
 
 - cloned the repo
